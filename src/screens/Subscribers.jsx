@@ -1,9 +1,5 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import Loader from '../components/Loader'
-import Message from '../components/Message'
-import { Table } from 'react-bootstrap'
-import { getUnsubscribers } from '../../../backend/controllers/subscribersController'
 
 const Subscribers = () => {
   const [subscribers, setSubscribers] = useState(null)
@@ -64,7 +60,7 @@ const Subscribers = () => {
         <h1>Odberatelia noviniek</h1>
       </div>
 
-      <div id='email-container'>
+      <div id="email-container">
         {subscribers?.map((user) => (
           <div key={user._id}>
             <p>
@@ -76,7 +72,7 @@ const Subscribers = () => {
       <button onClick={copyEmails}>Kopírovať mailové adresy odberateľov</button>
       <div>
         <h1>Odber zrušili</h1>
-        <div id='email-container'>
+        <div id="email-container">
           {unsubscribers?.map((user) => (
             <div key={user._id}>
               <p>
