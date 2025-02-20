@@ -12,11 +12,15 @@ export default defineConfig({
       '/api': {
         //target: 'http://localhost:3009',
         target: 'https://prud-back.pictusweb.com',
+        changeOrigin: true,
+        secure: false,
       },
 
       '/uploads': {
         // target: 'http://localhost:3009',
         target: 'https://prud-back.pictusweb.com',
+        changeOrigin: true,
+        secure: false,
       },
     },
     // hmr: {
