@@ -10,17 +10,11 @@ export default defineConfig({
     //port: 3000,
     proxy: {
       '/api': {
-        //target: 'http://localhost:3009',
-        target: 'https://prud-back.pictusweb.com',
-        changeOrigin: true,
-        secure: false,
+        target: 'http://localhost:3009',
       },
 
       '/uploads': {
-        // target: 'http://localhost:3009',
-        target: 'https://prud-back.pictusweb.com',
-        changeOrigin: true,
-        secure: false,
+        target: 'http://localhost:3009',
       },
     },
     // hmr: {
